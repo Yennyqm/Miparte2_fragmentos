@@ -1,4 +1,4 @@
-package com.ditec.miparte2_fragmentos;
+package com.ditec.miparte2_fragmentos.Ejemplo1;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -11,6 +11,8 @@ import android.widget.AdapterView;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.ditec.miparte2_fragmentos.R;
+
 public class MainActivity extends AppCompatActivity {
 Spinner mispinner;
     @Override
@@ -20,10 +22,10 @@ Spinner mispinner;
         mispinner=findViewById(R.id.mispinner);
         mispinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
-            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+            public void onItemSelected(AdapterView<?> adapterView, View view, int position, long l) {
                 Toast.makeText(MainActivity.this,(String)mispinner.getSelectedItem() , Toast.LENGTH_SHORT).show();
                 Fragment FragmentoSeleccionado = null;
-                switch (i){
+                switch (position){
                     case 0:
                         FragmentoSeleccionado= new ListaFragmento();
                         break; case 1:
