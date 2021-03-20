@@ -7,25 +7,39 @@
     tools:context=".EjemplosFragment">
 
     <Button
-        android:onClick="ejemplo1"
+        android:onClick="ejemplo3"
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="176dp"
+        android:text="EJEMPLO3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button2" />
+
+    <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="190dp"
+        android:layout_marginTop="188dp"
+        android:onClick="ejemplo1"
         android:text="Ejemplo1"
         app:layout_constraintEnd_toEndOf="@+id/button2"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@+id/button2"
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:onClick="ejemplo2"
         android:id="@+id/button2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="134dp"
-        android:layout_marginLeft="134dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:onClick="ejemplo2"
         android:text="Ejemplo2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.502" />
 </androidx.constraintlayout.widget.ConstraintLayout>
